@@ -37,7 +37,7 @@ public class SpringBootDemoHelloworldApplication {
 	@GetMapping("/hello")
 	public String sayHello(@RequestParam(required = false, name = "who") String who) {
 		if (StrUtil.isBlank(who)) {
-			who = "Azure DevOps pipeline 测试";
+			who = "Azure DevOps pipeline 测试20201015 ";
 		}
 		return StrUtil.format("Hello, {}!", who);
 	}
